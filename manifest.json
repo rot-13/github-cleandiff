@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+
+    "name": "Github Cleandiff",
+    "description": "Remove -/+ when copying GitHub diffs",
+    "version": "1.0.0",
+
+    "permissions": [
+        "<all_urls>"
+    ],
+    "content_scripts": [{
+      "matches": ["*://*.github.com/*"],
+      "js": ["jquery-1.11.1.min.js", "github-cleandiff.js"],
+      "css": ["github-cleandiff.css"],
+      "run_at": "document_end"
+    }]
+
+}

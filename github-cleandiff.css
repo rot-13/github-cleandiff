@@ -1,0 +1,3 @@
+.clean-diff-sheker::before {
+  content: attr(data-char);
+}

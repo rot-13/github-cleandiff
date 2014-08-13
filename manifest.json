@@ -10,7 +10,7 @@
     ],
     "content_scripts": [{
       "matches": ["*://*.github.com/*"],
-      "js": ["jquery-1.11.1.min.js", "github-cleandiff.js"],
+      "js": ["github-cleandiff.js"],
       "css": ["github-cleandiff.css"],
       "run_at": "document_end"
     }]

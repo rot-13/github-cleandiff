@@ -2,6 +2,7 @@ var lines = document.querySelectorAll('.diff-line-code');
 
 for (var i = 0; i < lines.length; i++) {
   var line = lines[i],
+      commentButton = line.firstChild,
       lineContent = line.innerText,
       firstChar = lineContent[0],
       restContent = lineContent.slice(1);
@@ -14,6 +15,7 @@ for (var i = 0; i < lines.length; i++) {
   rest.innerText = restContent;
 
   line.innerText = '';
+  line.appendChild(commentButton);
   line.appendChild(first);
   line.appendChild(rest);
 }

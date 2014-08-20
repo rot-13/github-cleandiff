@@ -3,7 +3,7 @@
 
     "name": "Github Cleandiff",
     "description": "Remove -/+ when copying GitHub diffs",
-    "version": "0.0.3",
+    "version": "0.0.4",
 
     "permissions": [
         "<all_urls>"
